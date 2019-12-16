@@ -5,6 +5,8 @@ export HELM_HOST=localhost:44134
 helm create sample-chart
 cd sample-chart
 helm install --name sample . -f values.yaml
+helm install --name sample --dry-run --debug .
+helm lint .
 ```
 
 #### Important Notes
